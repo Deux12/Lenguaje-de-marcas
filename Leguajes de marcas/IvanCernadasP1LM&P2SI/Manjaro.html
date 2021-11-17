@@ -1,0 +1,1226 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-0" />
+    <title>Manjaro</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        *{
+            font-family: sans-serif;
+        }
+
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+
+        p,
+        h2,
+        table,
+        h3 {
+            margin-left: 20px;
+        }
+
+        body {
+            background-color: #FEF5E7;
+        }
+
+        footer {
+
+            background: #202020;
+            color: white;
+            
+        }
+
+        .container-body {
+            display: flex;
+            
+        }
+
+        .colum1 h2 {
+            max-width: 400px;
+            font-size: 22px;
+        }
+
+        .row img {
+            width: 36px;
+            height: 36px;
+        }
+        .arrowUp {
+            position: relative;
+            display: inline-block;
+            width: 26px;
+            height: 26px;
+            border-radius: 5px;
+            background-color: rgb(65, 65, 65);
+        }
+
+        .arrowUp::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 14px solid white;
+        }
+    </style>
+    <link rel="shourtcut icon" href="./res/icono.png" />
+</head>
+
+<body id="inicio">
+    <p id="arriba"></p>
+    <h1>
+        <center>MANJARO</center>
+    </h1>
+
+    <center> <img src="./res/icono.png" width="100" height="100" /></center>
+
+    <center>
+        <p>Manjaro Linux fue desarrollado por <strong>Manjaro GmbH & Co. KG.</strong> , el 10 de julio de 20211
+            publicaron su
+            primera versión 0.1 y tiene una distribución <strong>GNU/Linux</strong> </p>
+    </center>
+    </br>
+
+    <hr size="2px" color="black" />
+    <h2><u>Tabla</u></h2>
+    <ol>
+        <li><strong><a href="#descripcion">Descripción general de la distribución y sus características</a></strong>
+        </li>
+        <li><strong><a href="#info">Información general</a></strong></li>
+        <ol>
+            <li><a href="#tabla">Resumen de todos los apartados</a></li>
+            <li><a href="#desarrollador">Desarrollador</a></li>
+            <li><a href="#modelo">Modelo de desarrollo</a></li>
+            <li><a href="#licencia">Licencia</a></li>
+            <li><a href="#fecha_lan">Fecha de lanzamiento</a></li>
+            <li><a href="#nucleo">Tipo de núcleo o kernel</a></li>
+            <li><a href="#estable">Última versión estable</a></li>
+
+        </ol>
+        <li><strong><a href="#tutorial">Tutoriales de instalación y utilización de la distribución</a></strong></li>
+        <li><strong><a href="#repositores">Repositorios de la distribución</a></strong></li>
+        <li><strong><a href="#historial">Tabla con el historial de versiones</a></strong></li>
+        <li><strong><a href="#paquetes">Tabla con los paquetes preinstalados</a></strong></li>
+        <li><strong><a href="#conclusiones">Conclusiones</a></strong></li>
+    </ol>
+    </br>
+    <hr size="2px" color="black" />
+
+    <h2 id="descripcion"><u>Descripción general de la distribución y sus características</u></h2>
+    <a href="#arriba"><span class='arrowUp'></span></a>
+    </br>
+    <p>Usa una distribución <strong>GNU/Linux</strong> es una distribución de software basada en el núcleo
+        Linux que incluye determinados paquetes de software para cumplir con los requisitos impuestos.</p>
+    <p>Por lo general están compuestas, total o mayoritariamente, de <strong>software libre</strong>, aunque a menudo
+        incorporan
+        aplicaciones o controladores propietarios.</p>
+    <p><strong>Manjaro Linux</strong> ofrece de serie el soporte multimedia, una robusta solución para la detección de
+        hardware,
+        soporte para múltiples versiones del kernel y un proceso de instalación gráfico.</p>
+    <p> El modelo de desarrollo <em>rolling release</em> significa que el usuario no necesita reinstalar
+        el sistema en cada lanzamiento. La instalación se hacía por medio de un sencillo instalador gráfico llamado
+        <em>Thus</em>, desde la versión 15.09 se usa <em>CALAMARES</em>
+        como instalador o mediante una interfaz semi gráfica de terminal.
+    </p>
+    <p>
+        La gestión de paquetes es manejada por <em>pacman</em> pero añade una interfaz
+        gráfica para búsqueda e instalación de paquetes, <em>Pamac</em> en el caso de las ediciones basadas
+        en <strong>GTK y Octopi</strong> en las basadas en <strong>Qt</strong>. Ambos incluyen un notificador de
+        actualizaciones disponibles y son compatibles con <strong>AUR</strong>.
+    </p>
+    <p>
+        Existen versiones de <strong>32-bits y 64-bits</strong> y es binariamente compatible
+        con <strong>Arch Linux</strong>.
+    </p>
+    <p>
+        Los repositorios son manejados con su propia herramienta denominada
+        <strong>Boxlt</strong> diseñada al estilo git.
+    </p>
+
+    <p>En el año <strong>2019</strong>, Manjaro tenía disponibles los siguientes escritorios:</p>
+
+    <ol>
+        <li><strong>Distribuciones oficiales</strong>: Xfce, KDE y GNOME.</li>
+        <li><strong>Distribuciones comunitarias</strong>: Openbox, Mate, Cinnamon, Awesome, LXDE, LXQt, BSPWM, Budgie e
+            I3.</li>
+        <li><strong>Distribuciones para ARM v8</strong>: Odroid N2 KDE, Odroid N2 Lxqt, Rockpro 64 Minimal, Pinebook I3,
+            Pinebook KDE, Pinebook Lxqt, Raspberry PI 3 Lxqt, Raspberry PI 3 Minimal, Rock PI 4 Minimal, Rockpro64
+            Minimal, Rockpro64 KDE, Rockpro64 Lxqt.</li>
+        <li>Única distribución que soporta 32 bits:<strong> Xfce</strong>.</li>
+        <li><strong>Manjaro Architect</strong>, que permite realizar una instalación del sistema completamente
+            personalizable usando la línea de comandos de linux.</li>
+    </ol>
+
+    <p>Dentro de sus <strong>características</strong> también podemos destacar:</p>
+    <ol>
+        <li><strong>Velocidad, potencia y eficiencia</strong></li>
+        <li>Acceso a las <strong>versiones más modernas del software</strong></li>
+        <li>Un modelo de desarrollo <strong>Rolling-release</strong></li>
+        <li>Acceso a al repositorio de usuarios de <strong>Arch (AUR)</strong></li>
+    </ol>
+
+    <hr size="2px" color="black" />
+
+
+
+    <h2 id="info"><u>Información general</u></h2>
+
+    <a href="#arriba"><span class='arrowUp'></span></a>
+    <h3 id="tabla"><u>2.1 Resumen</u></h3>
+
+    <table id="tabla">
+
+        <tr>
+            <th colspan="2">Información general</th>
+
+        </tr>
+        <tr>
+            <th>Desarrollador</th>
+            <td>Manjaro GmbH & Co. KG</td>
+        </tr>
+        <tr>
+            <th>Modelo de desarrollo</th>
+            <td>Software libre y de código abierto</td>
+        </tr>
+        <tr>
+            <th>Licencia</th>
+            <td>GPL</td>
+        </tr>
+        <tr>
+            <th>Fecha de lanzamiento</th>
+            <td>0.1 10 de julio de 2011</td>
+        </tr>
+        <tr>
+            <th>Tipo de núcleo</th>
+            <td>Linux</td>
+        </tr>
+        <tr>
+            <th>Última versión estable</th>
+            <td>Manjaro 21.0.7</td>
+        </tr>
+
+    </table>
+    </br>
+    <h3 id="desarrollador"><u>2.2 Desarrollador</u></h3>
+
+    <p>Lo único que se sabe de su desarrollador es que fue <strong>Manjaro GmbH & Co. KG</strong></p>
+
+    <h3 id="modelo"><u>2.3 Modelo de desarrollo</u></h3>
+
+    <p>Se sabe que su modelo de desarrollo es <strong>Software libre y de código abierto</strong></p>
+
+    <h3 id="licencia"><u>2.4 Licencia</u></h3>
+
+    <p>Una licencia de software es un contrato entre el licenciante y el licenciatario del programa informático, para
+        utilizarlo
+        cumpliendo una serie de términos y condiciones establecidas dentro de sus cláusulas, es decir, es un conjunto de
+        permisos que un desarrollador le
+        puede otorgar a un usuario en los que tiene la posibilidad de distribuir, usar o modificar el producto bajo una
+        licencia determinada. </p>
+    <p>El tipo de licencia de Manjaro es <strong>GPL</strong></p>
+    <p>
+        <img src="./res/gpl.png" />
+    </p>
+    </br>
+    <p><strong>GPL</strong> es una licencia de derecho de autor ampliamente usada en el mundo del software libre y
+        código abierto,
+        y garantiza a los usuarios finales la libertad de usar, estudiar, compartir y modificar el software. </p>
+    <p>Tiene dos propósitos: declarar que el software cubierto por esta licencia es <strong>libre</strong>, y
+        <strong>protegerlo de intentos
+            de apropiación</strong> que restrinjan esas libertades a nuevos usuarios cada vez que la obra es
+        distribuida, modificada o ampliada.
+    </p>
+    <p>
+
+    </p>
+
+    <h3 id="fecha_lan"><u>2.5 Fecha de lanzamiento</u></h3>
+
+    <p>Su lanzamiento inicial fue: 0.1 10 de julio de 2011</p>
+
+    <h3 id="nucleo"><u>2.6 Tipo de núcleo o kernel</u></h3>
+
+    <p>Su nucleo es Linux</p>
+    <p><strong>Linux</strong> es un núcleo mayormente libre semejante al núcleo de <strong>Unix</strong>. </p>
+    <p><strong>Linux</strong> es multiprogramado, dispone de memoria virtual, gestión de memoria, conectividad en red y
+        permite bibliotecas compartidas.
+        Es multiplataforma y es portable a cualquier arquitectura siempre y cuando esta disponga de una versión de GCC
+        compatible. </p>
+
+    <h3 id="estable"><u>2.7 Última versión estable</u></h3>
+
+    <p>Su última versión estable es <strong>Manjaro 21.0.7</strong>, que coincide con su última versión</p>
+
+    <hr size="2px" color="black" />
+
+
+
+    <h2 id="tutorial"><u>Tutoriales de instalación y utilización de la distribución</u></h2>
+    <a href="#arriba"><span class='arrowUp'></span></a>
+
+    <p>A continucación puedes encontrar una serie de <strong>tutoriales de instalación</strong>: </p>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wL7zE4t0hRg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YmcLwSpxALc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+
+    <hr size="2px" color="black" />
+
+
+
+    <h2 id="repositores"><u>Repositorio de la distribución</u></h2>
+
+    <a href="#arriba"><span class='arrowUp'></span></a>
+
+    <p>Un <strong>repositorio</strong> (o "repositorio") es básicamente una ubicación de almacenamiento, generalmente un
+        servidor en Internet, desde el que puede
+        instalar software. Los usuarios de Manjaro,
+        de forma predeterminada, utilizarán el <u><strong>repositorio oficial de Manjaro</strong></u>. Se accede a estos
+        repositorios a través de los " <strong>Manjaro Mirrors</strong> "</p>
+
+    <h2>Qué es un mirrror?</h2>
+
+    <p>Es un servidor que almacena una copia actualizada de los paquetes software de
+        una distribución, un ejemplo de un repositorio es <strong>Arch User Repository (AUR)</strong>
+    </p>
+
+    <p>Y un espejo se sicroniza a través de servicios <strong>Rsync</strong> como por ej:
+        <em>//ftp.tsukuba.wide.ad.jp/manjaro</em> (Asia / Japón), siempre se recomienda sincronizar desde la ubicación
+        más cercana
+    </p>
+
+    <hr size="2px" color="black" />
+
+
+
+    <h2 id="historial"><u>Tabla con el historial de versiones</u></h2>
+
+    <a href="#arriba"><span class='arrowUp'></span></a>
+
+    <table id="tabla2">
+        <tr>
+            <th width="50%" style="background-color: #17202A; color: #FDFEFE;">Versión</th>
+            <th width="50%" style="background-color: #17202A; color: #FDFEFE;">Fecha de lanzamiento</th>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #2980B9  ;">0.1 (Alfa)</td>
+            <td width="50%" style="background-color: #2980B9  ;">10-07-2011</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #3498DB ;">0.8 "Ascella"</td>
+            <td width="50%" style="background-color: #3498DB ;">20-08-2012</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #1ABC9C;">0.8.4 "Ascella"</td>
+            <td width="50%" style="background-color: #1ABC9C ;">25-02-2013</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #1ABC9C ;">0.8.8 "Ascella"</td>
+            <td width="50%" style="background-color: #1ABC9C ;">24-11-2013</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #16A085;">0.8.11 "Ascella"</td>
+            <td width="50%" style="background-color: #16A085;">01-12-2014</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #27AE60;">15.09 "Bellatrix"</td>
+            <td width="50%" style="background-color: #27AE60;">27-09-2015</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #27AE60;">15.12 "Capella"</td>
+            <td width="50%" style="background-color: #27AE60;">23-12-2015</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #2ECC71 ;">16.06 "Daniella"</td>
+            <td width="50%" style="background-color: #2ECC71 ;">06-06-2016</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #2ECC71 ;">16.08 "Ellada"</td>
+            <td width="50%" style="background-color: #2ECC71 ;">31-08-2016</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #2ECC71 ;">16.10 "Fringilla"</td>
+            <td width="50%" style="background-color: #2ECC71 ;">31-10-2016</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #F1C40F;">17.0 "Gellivara"</td>
+            <td width="50%" style="background-color: #F1C40F;">07-03-2017</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #F1C40F;">17.1 "Hakoila"</td>
+            <td width="50%" style="background-color: #F1C40F;">31-12-2017</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #F39C12 ;">17.1.6 "Hakoila"</td>
+            <td width="50%" style="background-color: #F39C12 ;">26-02-2018</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #F39C12 ;">17.1.12 "Hakoila"</td>
+            <td width="50%" style="background-color: #F39C12 ;">18-08-2018</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #F39C12 ;">18.0 "Illyria"</td>
+            <td width="50%" style="background-color: #F39C12 ;">30-10-2018</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #E67E22;">18.0.4 "Illyria"</td>
+            <td width="50%" style="background-color: #E67E22;">12-03-2019</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #E67E22;">18.1 "Juhraya"</td>
+            <td width="50%" style="background-color: #E67E22;">12-09-2019</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #E67E22;">18.1.2 "Juhraya"</td>
+            <td width="50%" style="background-color: #E67E22;">05-11-2019</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">18.1.5 "Juhraya" </td>
+            <td width="50%" style="background-color: #D35400;">05-01-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">19.0 "Kyria"</td>
+            <td width="50%" style="background-color: #D35400;">25-02-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">19.0.1 "Kyria"</td>
+            <td width="50%" style="background-color: #D35400;">28-02-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">19.0.2 "Kyria"</td>
+            <td width="50%" style="background-color: #D35400;">11-03-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">20.0 "Lysia"</td>
+            <td width="50%" style="background-color: #D35400;">26-04-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">20.0.2 "Lysia"</td>
+            <td width="50%" style="background-color: #D35400;">02-06-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">20.0.3 "Lysia"</td>
+            <td width="50%" style="background-color: #D35400;">10-06-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">20.1 "Mikah"</td>
+            <td width="50%" style="background-color: #D35400;">12-09-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #D35400;">20.2 "Nibia"</td>
+            <td width="50%" style="background-color: #D35400;">03-12-2020</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.0 "Ornara"</td>
+            <td width="50%" style="background-color: #C0392B;">23-03-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.0.2 "Ornara"</td>
+            <td width="50%" style="background-color: #C0392B;">19-04-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.0.3 "Ornara"</td>
+            <td width="50%" style="background-color: #C0392B;">28-04-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.0.7 "Ornara"</td>
+            <td width="50%" style="background-color: #C0392B;">15-06-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.1.0 "Pahvo"</td>
+            <td width="50%" style="background-color: #C0392B;">17-08-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.1.2 "Pahvo"</td>
+            <td width="50%" style="background-color: #C0392B;">04-09-2021</td>
+        </tr>
+        <tr>
+            <td width="50%" style="background-color: #C0392B;">21.1.6</td>
+            <td width="50%" style="background-color: #C0392B;">16-10-2021</td>
+        </tr>
+    </table>
+
+    <hr size="2px" color="black" />
+
+
+
+    <u>
+        <h2 id="paquetes">Paquetes preinstalados</h2>
+    </u>
+
+    <a href="#arriba"><span class='arrowUp'></span></a>
+
+    <table>
+        <tr>
+            <th style="background-color: #17202A; color: #FDFEFE;">Paquete</th>
+            <th style="background-color: #17202A; color: #FDFEFE;">Información</th>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>a52dec</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca gratuíta para decodificar transmisiones ATSC A / 52</td>
+        </tr>
+        <tr>
+            <td>aalib</td>
+            <td>Biblioteca de software que permite a las aplicaciones convertir automáticamente
+                imágenes fijas y en movimiento en arte ASCII</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>accountsservice</td>
+            <td style="background-color: #ADADAD" ;>Sirve para consultar
+                y manipular la información de la cuenta de usuario</td>
+        </tr>
+        <tr>
+            <td>acl</td>
+            <td>Indican al router qué tipo de paquetes aceptar o rechazar
+                en base a las condiciones establecidas en ellas</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>acpi</td>
+            <td style="background-color: #ADADAD" ;> Muestra información sobre dispositivos ACPI</td>
+        </tr>
+        <tr>
+            <td>adobe</td>
+            <td>Programas de edición de páginas web, vídeo e imagen digital</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>alsa</td>
+            <td style="background-color: #ADADAD" ;>Nuevo software de sonido para GNU/Linux, que sustituye al anticuado
+                OSS</td>
+        </tr>
+        <tr>
+            <td>android</td>
+            <td> Incluye todos los recursos y el código compilado de tu app</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>apparmor</td>
+            <td style="background-color: #ADADAD" ;>Sistema de control de acceso obligatorio (MAC)
+                que es una mejora del kernel (LSM) para limitar los programas a un conjunto limitado de recursos</td>
+        </tr>
+        <tr>
+            <td>appstream</td>
+            <td>Es un formato XML de distribución cruzada para proporcionar metadatos para componentes
+                de software y para asignar identificadores únicos al software</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>archlinux</td>
+            <td style="background-color: #ADADAD" ;>Proporcionar las últimas versiones estables de la mayoría
+                del software siguiendo un modelo de lanzamiento continuo</td>
+        </tr>
+        <tr>
+            <td>argon2</td>
+            <td>Es una función de derivación de clave</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>atkmm</td>
+            <td style="background-color: #ADADAD" ;>Se refiere a una Interfaz de programación de aplicaciones (API) para
+                desarrollar aplicaciones
+                accesibles para plataformas libres y de código abierto</td>
+        </tr>
+        <tr>
+            <td>attr</td>
+            <td>Este paquete proporciona utilidades de manipulación xattr</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>audacious</td>
+            <td style="background-color: #ADADAD" ;>Software de reproducción de audio gratuito y de código abierto que
+                se centra en el uso de pocos recursos, alta calidad de audio
+                y compatibilidad con una amplia gama de formatos de audio</td>
+        </tr>
+        <tr>
+            <td>avahi</td>
+            <td>Implementación de red de configuración cero gratuita (zeroconf), que incluye un sistema para
+                el descubrimiento de servicios de multidifusión DNS / DNS-SD </td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>bash</td>
+            <td style="background-color: #ADADAD" ;>Interfaz de usuario de línea de comandos</td>
+        </tr>
+        <tr>
+            <td>bc</td>
+            <td>Es una precisión arbitraria lenguaje calculadora</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>blas</td>
+            <td style="background-color: #ADADAD" ;>Subprogramas básicos de álgebra lineal</td>
+        </tr>
+        <tr>
+            <td>bluez</td>
+            <td>Actualiza las fuentes para usar
+                el lenguaje inclusivo basado en la guía de Bluetooth SIG</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>boost</td>
+            <td style="background-color: #ADADAD" ;>Conjunto de bibliotecas de software libre y revisión por pares</td>
+        </tr>
+        <tr>
+            <td>brotli</td>
+            <td> Algoritmo y formato de compresión sin pérdidas</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>bubblewrap</td>
+            <td style="background-color: #ADADAD" ;>Utilidad para chroot
+                sin privilegios y manipulación del espacio de nombres</td>
+        </tr>
+        <tr>
+            <td>bzip2</td>
+            <td>Es un programa libre desarrollado bajo licencia BSD que comprime y descomprime ficheros usando los
+                algoritmos
+                de compresión de Burrows-Wheeler y de codificación de Huffman</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>ca</td>
+            <td style="background-color: #ADADAD" ;>Señalan a una entidad de confianza,
+                responsable de emitir y revocar los certificados,</td>
+        </tr>
+        <tr>
+            <td>cairo</td>
+            <td>Es una biblioteca de gráficos de código abierto que proporciona una API independiente del dispositivo
+                basada
+                en gráficos vectoriales para desarrolladores de software </td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>calamares</td>
+            <td style="background-color: #ADADAD" ;>Es un marco de instalación</td>
+        </tr>
+        <tr>
+            <td>catfish</td>
+            <td>Es una interfaz gráfica de usuario para muchas
+                herramientas de búsqueda diferentes, como buscar y localizar </td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>cdparanoia</td>
+            <td style="background-color: #ADADAD" ;> es un programa libre desarrollado por la
+                Fundación Xiph.Org para extraer el audio de discos compactos</td>
+        </tr>
+        <tr>
+            <td>chromaprint</td>
+            <td>Es una biblioteca del lado del cliente que implementa un algoritmo personalizado
+                para extraer huellas digitales de cualquier fuente de audio</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>ckbcomp</td>
+            <td style="background-color: #ADADAD" ;>Funciona aproximadamente como setxkbmap pero se compila en formato
+                loadkeys</td>
+        </tr>
+        <tr>
+            <td>clonezilla</td>
+            <td>Es un programa de clonación / creación de imágenes
+                de disco y particiones similar a True Image® o Norton Ghost®</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>coreutils</td>
+            <td style="background-color: #ADADAD" ;>Es un paquete de software desarrollado por el proyecto GNU que
+                contiene varias de las herramientas básicas
+                como cat, ls y rm necesarias para sistemas operativos del tipo Unix</td>
+        </tr>
+        <tr>
+            <td>cpupower</td>
+            <td>Conjunto de utilidades de espacio de usuario diseñadas
+                para ayudar con el escalado de frecuencia de la CPU</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>cracklib</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca que se utiliza para hacer cumplir contraseñas seguras
+                comparando las contraseñas seleccionadas por el
+                usuario con las palabras de las listas de palabras elegidas</td>
+        </tr>
+        <tr>
+            <td>crda</td>
+            <td>Agente de dominio regulatorio central inalámbrico</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>cryptsetup</td>
+            <td style="background-color: #ADADAD" ;>Utilidad que se utiliza para configurar cómodamente
+                el cifrado de disco basado en el módulo del kernel DMCrypt</td>
+        </tr>
+        <tr>
+            <td>cups</td>
+            <td>Sistema de impresión</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>curl</td>
+            <td style="background-color: #ADADAD" ;>Transferencia de archivos</td>
+        </tr>
+        <tr>
+            <td>dav1d</td>
+            <td>Compilador en el sistema Meson</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>dbus</td>
+            <td style="background-color: #ADADAD" ;>Mecanismo de middleware orientado a mensajes que permite la
+                comunicación entre múltiples
+                procesos que se ejecutan simultáneamente en la misma máquina</td>
+        </tr>
+        <tr>
+            <td>dconf</td>
+            <td>Sistema de almacenamiento de configuración a bajo nivel</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>dhcpcd</td>
+            <td style="background-color: #ADADAD" ;>Actualmente es el cliente
+                DHCP de código abierto que más características tiene</td>
+        </tr>
+        <tr>
+            <td>diffutils</td>
+            <td>Es un paquete de varios programas relacionados
+                con la búsqueda de diferencias entre archivos</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>dmidecode</td>
+            <td style="background-color: #ADADAD" ;>Utilidad de línea de comandos de espacio de usuario gratuita</td>
+        </tr>
+        <tr>
+            <td>dmraid</td>
+            <td>El propósito de dmraid es arbitrar entre los metadatos en disco de ATARAID y la necesidad del mapeador
+                de dispositivos para nombrar los
+                dispositivos mapeados y definir tablas de mapeo para ellos</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>dnsmasq</td>
+            <td style="background-color: #ADADAD" ;>Proporciona redireccionador de sistema de nombres de dominio (DNS)
+            </td>
+        </tr>
+        <tr>
+            <td>dosfstools</td>
+            <td>Incluye las utilidades mkfs.fat y fsck.fat, que crean y verifican
+                respectivamente los sistemas de archivos MS-DOS FAT</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>drbl</td>
+            <td style="background-color: #ADADAD" ;>Una solución de código abierto para administrar
+                la implementación del sistema operativo GNU / Linux</td>
+        </tr>
+        <tr>
+            <td>e2fsprogs</td>
+            <td>Conjunto de utilidades para mantenimiento
+                de los sistemas de ficheros ext2, ext3 y ext4</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>efibootmgr</td>
+            <td style="background-color: #ADADAD" ;>Manipula los ajustes EFI a fin de crear y gestionar
+                entradas de arranque capaces de arrancar Línux</td>
+        </tr>
+        <tr>
+            <td>efivar</td>
+            <td> proporciona herramientas y bibliotecas para manipular variables EFI</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>enchant</td>
+            <td style="background-color: #ADADAD" ;>Está desarrollado como parte del Procesador de texto AbiWord con el
+                propósito de unificar el acceso a varios Correctores ortográficos existentes</td>
+        </tr>
+        <tr>
+            <td>engrampa</td>
+            <td>Administrador de archivos para el entorno MATE</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>exiv2</td>
+            <td style="background-color: #ADADAD" ;>Herramienta de manipulación de metadatos de imágenes </td>
+        </tr>
+        <tr>
+            <td>expat</td>
+            <td>Biblioteca de proceso XML 1.0 orientada a streams y escrita en lenguaje de programación C</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>faac</td>
+            <td style="background-color: #ADADAD" ;>Es un proyecto de software que incluye
+                el codificador AAC FAAC y el descodificador FAAD2</td>
+        </tr>
+        <tr>
+            <td>farstream</td>
+            <td>es un esfuerzo por crear un marco para manejar todos los protocolos de conferencias de audio / video
+                conocidos</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>ffmpeg</td>
+            <td style="background-color: #ADADAD" ;>colección de software libre que puede grabar, convertir
+                (transcodificar) y hacer streaming de audio y vídeo</td>
+        </tr>
+        <tr>
+            <td>FFTW</td>
+            <td>es una biblioteca de software para calcular
+                transformadas de Fourier discretas (DFT)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>file</td>
+            <td style="background-color: #ADADAD" ;>Tipo de archivo que contiene programas informáticos y metadatos
+                adicionales que necesitan los administradores de paquetes</td>
+        </tr>
+        <tr>
+            <td>findutils</td>
+            <td>Utilidades básicas de búsqueda de directorios del sistema operativo GNU</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>firefox</td>
+            <td style="background-color: #ADADAD" ;>Navegador web libre y de código abierto desarrollado para distintas
+                plataformas</td>
+        </tr>
+        <tr>
+            <td>FLAC</td>
+            <td> códec de audio que permite que el audio digital sea comprimido sin pérdidas de tal manera que el tamaño
+                del archivo de audio se
+                reduce sin que se pierda ningún tipo de información</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>fluidsynth</td>
+            <td style="background-color: #ADADAD" ;> Sintetizador de software de código abierto que
+                convierte notas midi en una señal de audio usando tecnología SoundFont</td>
+        </tr>
+        <tr>
+            <td>fontconfig</td>
+            <td>Es una biblioteca de programas de software libre diseñada para proporcionar configuración,
+                enumeración y sustitución de fuentes por otros programas</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>foomatic</td>
+            <td style="background-color: #ADADAD" ;>Filtro de impresión configurable</td>
+        </tr>
+        <tr>
+            <td>freeglut</td>
+            <td>Permite al usuario crear y administrar ventanas que contienen contextos OpenGL en una amplia gama de
+                plataformas
+                y también leer las funciones del mouse, teclado y joystick</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>freetype2</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca escrita en C que implementa un motor de manejo de tipos
+                de letra</td>
+        </tr>
+        <tr>
+            <td>Fribidi</td>
+            <td>Implementación C de código abierto del algoritmo bidireccional Unicode</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>fuse</td>
+            <td style="background-color: #ADADAD" ;>Sistema de archivos en el espacio de usuario</td>
+        </tr>
+        <tr>
+            <td>galculator</td>
+            <td>Calculadora basada en GTK 2 / GTK 3</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>garcon</td>
+            <td style="background-color: #ADADAD" ;>Implementación de la especificación del menú freedesktop.org</td>
+        </tr>
+        <tr>
+            <td>gawk</td>
+            <td>La implementación GNU del lenguaje de programación AWK</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gdk</td>
+            <td style="background-color: #ADADAD" ;>La capa de bajo nivel de la biblioteca de componentes gráficos GTK
+                cuyo propósito es separar esta del interfaz de
+                programación de aplicaciones (API) del sistema gráfico nativo</td>
+        </tr>
+        <tr>
+            <td>gegl</td>
+            <td>biblioteca de programación
+                en desarrollo para aplicaciones de procesamiento de imagen</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>geoclue</td>
+            <td style="background-color: #ADADAD" ;>Servicio de D-Bus que proporciona información de ubicación</td>
+        </tr>
+        <tr>
+            <td>gettext</td>
+            <td>Se usa para escribir programas con interfaz en varios idiomas</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>ghostscript</td>
+            <td style="background-color: #ADADAD" ;>El programa intérprete por excelencia de documentos en formato PS (y
+                también PDF)</td>
+        </tr>
+        <tr>
+            <td>giflib</td>
+            <td>Es una biblioteca para leer y escribir imágenes gif</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gimp</td>
+            <td style="background-color: #ADADAD" ;>Programa de edición de imágenes digitales en forma de mapa de bits,
+                tanto dibujos como fotografías</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Software de control de versiones</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>glew</td>
+            <td style="background-color: #ADADAD" ;>una biblioteca C / C ++ multiplataforma que ayuda a consultar y
+                cargar extensiones OpenGL</td>
+        </tr>
+        <tr>
+            <td>glib</td>
+            <td>Biblioteca multiplataforma de funciones de propósito general implementada originalmente
+                como parte de la biblioteca de componentes gráficos GTK</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>glslang</td>
+            <td style="background-color: #ADADAD" ;>Lenguaje de alto nivel de sombreado
+                con una sintaxis basada en el lenguaje de programación C</td>
+        </tr>
+        <tr>
+            <td>glu</td>
+            <td>Biblioteca de gráficos por computadora para OpenGL</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gmp</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca libre en C</td>
+        </tr>
+        <tr>
+            <td>gnome</td>
+            <td>Entorno de escritorio e infraestructura de desarrollo para sistemas operativos GNU/Linux, Unix y
+                derivados Unix
+                como BSD o Solaris; compuesto enteramente de software libre</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gnupg</td>
+            <td style="background-color: #ADADAD" ;>Herramienta de cifrado y firmas digitales</td>
+        </tr>
+        <tr>
+            <td>gnutls</td>
+            <td>Implementación de software libre de los protocolos SSL y TLS</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gparted</td>
+            <td style="background-color: #ADADAD" ;>Editor de particiones para el entorno de escritorio GNOME</td>
+        </tr>
+        <tr>
+            <td>gpgme</td>
+            <td>Software libre de
+                reemplazo para Symantec 's PGP de cifrado paquete de software</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gpm</td>
+            <td style="background-color: #ADADAD" ;>Proporciona soporte
+                para dispositivos de ratón en consolas virtuales Linux</td>
+        </tr>
+        <tr>
+            <td>gptfdisk</td>
+            <td>Conjunto de herramientas de particionado en modo texto</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>graphviz</td>
+            <td style="background-color: #ADADAD" ;>Conjunto de herramientas de software para el diseño de diagramas
+            </td>
+        </tr>
+        <tr>
+            <td>grep</td>
+            <td>Utilidad de la línea de comandos
+                escrita originalmente para ser usada con el sistema operativo Unix</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>groff</td>
+            <td style="background-color: #ADADAD" ;>Sistema de composición que crea la salida con formato cuando
+                se administra de texto sin formato mezclado con comandos de formato</td>
+        </tr>
+        <tr>
+            <td>grub</td>
+            <td>Cargador de arranque múltiple, desarrollado por el proyecto GNU que
+                nos permite elegir qué Sistema Operativo arrancar de los instalados</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>Smartmontools</td>
+            <td style="background-color: #ADADAD" ;>conjunto de programas de utilidad ( smartctl y smartd ) para
+                controlar y monitorear los sistemas de almacenamiento de computadora utilizando el
+                sistema de tecnología de autocontrol, análisis e informes (SMART) integrado en la mayoría de los (P) ATA
+                , Serial ATA , Discos duros SCSI / SAS y NVMe</td>
+        </tr>
+        <tr>
+            <td>gssdp</td>
+            <td>Una API basada en GObject para
+                manejar el descubrimiento de recursos y el anuncio a través de SSDP</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gst-libav</td>
+            <td style="background-color: #ADADAD" ;>GStreamer con enlaces libav usando Libav interno</td>
+        </tr>
+        <tr>
+            <td>gstreamer</td>
+            <td>Framework multimedia libre multiplataforma
+                escrito en el lenguaje de programación C, usando la biblioteca GObject</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>GTK</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca de componentes gráficos
+                multiplataforma para desarrollar interfaces gráficas de usuario (GUI)</td>
+        </tr>
+        <tr>
+            <td>gufw</td>
+            <td>Cortafuegos con tecnología UFW (cortafuegos sin complicaciones)</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gupnp</td>
+            <td style="background-color: #ADADAD" ;>elegante marco de código abierto orientado a objetos para crear
+                dispositivos
+                UPnP y puntos de control, escrito en C usando GObject y libsoup</td>
+        </tr>
+        <tr>
+            <td>Gutenprint</td>
+            <td>colección de controladores de impresora de software
+                libre para su uso con sistemas de spool UNIX, como CUPS, lpr y LPRng</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>gvfs</td>
+            <td style="background-color: #ADADAD" ;> sistema de archivos virtual del espacio de usuario de GNOME
+                diseñado para trabajar con la abstracción de E / S de GIO
+                , una biblioteca disponible en GLib desde la versión 2.15.1</td>
+        </tr>
+        <tr>
+            <td>gzip</td>
+            <td>Software libre GNU que reemplaza al programa compress de UNIX</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>harfbuzz</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca de desarrollo de software para dar forma a texto, que es
+                el proceso de convertir texto Unicode en índices y posiciones de glifos</td>
+        </tr>
+        <tr>
+            <td>haveged</td>
+            <td> Intento de proporcionar un generador de números aleatorios impredecible
+                y fácil de usar basado en una adaptación del algoritmo HAVEGE</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>hdparm</td>
+            <td style="background-color: #ADADAD" ;>Utilidad de línea de comandos para configurar
+                y ver los parámetros de hardware de las unidades de disco duro</td>
+        </tr>
+        <tr>
+            <td>hexchat</td>
+            <td>Cliente de Internet Relay Chat que se bifurcó desde XChat</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>hidapi</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca multiplataforma que permite que una aplicación interactúe
+            </td>
+        </tr>
+        <tr>
+            <td>hplip</td>
+            <td>Proyecto para Gestión de Imágenes e Impresiones de HP</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>htop</td>
+            <td style="background-color: #ADADAD" ;>Sistema de monitorización, administración y visor de procesos
+                interactivo</td>
+        </tr>
+        <tr>
+            <td>Hunspell</td>
+            <td>Corrector ortográfico y un analizador morfológico</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>hwids</td>
+            <td style="background-color: #ADADAD" ;>Bases de datos de identificación de hardware</td>
+        </tr>
+        <tr>
+            <td>hwinfo</td>
+            <td>Programas de información del sistema para Windows</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>hwloc</td>
+            <td style="background-color: #ADADAD" ;>Paquete de software Portable
+                Hardware Locality (hwloc) proporciona una abstracción portátil</td>
+        </tr>
+        <tr>
+            <td>icu</td>
+            <td>Proyecto de código abierto de C/C++ y Java para Unicode,
+                que busca la internacionalización y globalización del software</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>imagemagick</td>
+            <td style="background-color: #ADADAD" ;>Paquete de software que se puede utilizar para crear, editar y
+                mostrar imágenes de mapa de bits,
+                ya sea desde la línea de comandos o mediante una interfaz gráfica</td>
+        </tr>
+        <tr>
+            <td>imath</td>
+            <td>Permite cálculos numéricos y simbólicos dentro de los documentos Writer e Impress</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>imlib2</td>
+            <td style="background-color: #ADADAD" ;>Biblioteca de gráficos para cargar, guardar, renderizar y manipular
+                archivos rápidamente</td>
+        </tr>
+        <tr>
+            <td>intltool</td>
+            <td>Conjunto de herramientas para centralizar la traducción de muchos formatos de archivo
+                diferentes utilizando archivos PO compatibles con gettext de GNU</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>inxi</td>
+            <td style="background-color: #ADADAD" ;>Secuencia de comandos de información del sistema de línea de
+                comandos para consola e IRC</td>
+        </tr>
+        <tr>
+            <td>iproute2</td>
+            <td>conjunto de herramientas muy potentes para administrar
+                interfaces de red y conexiones en sistemas Linux</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>iptables</td>
+            <td style="background-color: #ADADAD" ;>firewall</td>
+        </tr>
+        <tr>
+            <td>iputils</td>
+            <td> El paquete de herramientas ni los mantenedores de distribuciones
+                de Linux preocupados por corregir errores bien conocidos</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>ipw2100</td>
+            <td style="background-color: #ADADAD" ;>describe cómo habilitar el soporte para dispositivos WiFi
+                basados ​​en chipsets Intel 2100, 2200 y 2915 en sistemas Debian</td>
+        </tr>
+        <tr>
+            <td>lib32</td>
+            <td>Ubicación de almacenamiento desde
+                la que se recuperan los paquetes de software para su instalación</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>perl</td>
+            <td style="background-color: #ADADAD" ;> Lenguaje de programación diseñado por
+                Larry Wall en 1987. Perl toma características del lenguaje C</td>
+        </tr>
+        <tr>
+            <td>poppler</td>
+            <td> Biblioteca de software libre para generar
+                documentos pdf que se usa comunmente en sistemas Linux</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>pulseaudio</td>
+            <td style="background-color: #ADADAD" ;>Servidor de sonido multiplataforma, capaz de funcionar por red</td>
+        </tr>
+        <tr>
+            <td>Phyton</td>
+            <td>El repositorio de software oficial para
+                aplicaciones de terceros en el lenguaje de programación Python</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>qt5</td>
+            <td style="background-color: #ADADAD" ;> Framework multiplataforma orientado a objetos ampliamente usado
+                para desarrollar programas (software) que utilicen interfaz gráfica de usuario, así como también
+                diferentes tipos de herramientas para la línea de comandos y consolas
+                para servidores que no necesitan una interfaz gráfica de usuario</td>
+        </tr>
+        <tr>
+            <td>systemd</td>
+            <td>Conjunto de demonios o daemons de administración de sistema, bibliotecas y herramientas diseñados como
+                una plataforma de administración y configuración central
+                para interactuar con el núcleo del Sistema operativo GNU/Linux</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>thunar</td>
+            <td style="background-color: #ADADAD" ;>Gestor de archivos lanzado oficialmente con la versión 4.4 de Xfce
+            </td>
+        </tr>
+        <tr>
+            <td>util-linux</td>
+            <td>paquete estándar distribuido por Linux Kernel
+                Organization para su uso como parte del sistema operativo Linux</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>wallpapers</td>
+            <td style="background-color: #ADADAD" ;>El objetivo es solicitar diseños gráficos en forma de ilustraciones
+                o fotografías para ser utilizados como fondos de pantalla
+                de la comunidad destinada al lanzamiento actualmente en desarrollo</td>
+        </tr>
+        <tr>
+            <td>wayland</td>
+            <td>Nuevo protocolo que permite que los compositores 3D se utilicen como servidores de visualización
+                primarios, en lugar de ejecutar el compositor
+                3D como una extensión en el servidor de visualización (2D) X.org</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>xcb</td>
+            <td style="background-color: #ADADAD" ;>Es un binding para el lenguaje C de X Window System</td>
+        </tr>
+        <tr>
+            <td>xdg</td>
+            <td>Conjunto de herramientas que permite que las aplicaciones se integren fácilmente con el entorno de
+                escritorio del usuario, independientemente
+                del entorno de escritorio específico que ejecute el usuario</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ADADAD" ;>xfce</td>
+            <td style="background-color: #ADADAD" ;>Entorno de escritorio libre para sistemas
+                tipo Unix como GNU/Linux, BSD, Solaris y derivados. Su objetivo es ser rápido y ligero, sin dejar de ser
+                visualmente atractivo y fácil de usar</td>
+        </tr>
+        <tr>
+            <td>xorg</td>
+            <td>un servidor X con todas las funciones que se diseñó originalmente para sistemas operativos
+                UNIX y similares a UNIX que se ejecutan en hardware Intel x86</td>
+        </tr>
+    </table>
+
+    <a href="#arriba"><span class='arrowUp'></span></a>
+
+
+    <hr size="2px" color="black" />
+
+    <center><u><h2 id="conclusiones">Conclusiones</h2></u></center>
+
+
+    <p>En este trabajo he aprendido que la distro de <strong>Manjaro Linux</strong> nos sirve para poder utilizar
+        <strong>Arch Linux</strong> pero de una forma muchisimo más sencilla,
+        debido a que tenemos una <strong>interfaz gráfica</strong> y no hay que aprenderse solo comandos.</p>
+
+        <p>Al realizar la búsqueda de paquetes preinstalados conocí bastante
+        sobre interfaces gráficas, paquetes que llevan a cabo la seguridad, el encriptado <em>(cryptsetup)</em>, el
+        sonido <em>(pulseaudio)</em>, la distribución de archivos<em>(systemd)</em> ... .</p>
+
+        <p>También aprendí a como instarlo, en una <strong>máquina virtual</strong>, y usarlo a través de los vídeos
+        explicativos anteriormente enlazados, se podría decir que tiene
+        una <strong>instalación sencilla</strong>, con una <strong>detección del hardware</strong> del equipo
+        <strong>automática</strong>. Y para finalizar tiene una <strong>velocidad, rendimiento y potencia
+            excelentes</strong>.</p>
+
+        <p>En la búsqueda de los <strong>repositorios</strong> conocí lo que es un <strong>mirror</strong> y que sin
+             ellos no se podría emplear un repositorio.</p>
+
+        <p><strong>Manjaro</strong> tiene una interfaz gráfica y una distribución del escritorio muy similar a <strong>Windows</strong> y
+             tiene un terminal más orientada a <strong>Linux</strong></p>
+</body>
+<footer>
+    <div class="container-body">
+        <div class="colum1">
+            <h2>Información</h2>
+            <p>El creador de la página es Iván Cernadas Fragueiro</p>
+            <p>Cursando 1 DAM</p>
+            <p>Estudios anteriores ESO y
+                Bachiller Científico Tecnológico</p>
+        </div>
+        <span style="width: 20mm;"></span>
+        <div class="colum2">
+            <h2>Redes Sociales</h2>
+            <div  class="row">
+                <center><a href=https://www.instagram.com/manjaro_linux/?hl=es><img width="50" height="50"
+                        src="./res/instagram2.svg"></a></center>
+                
+            </div>
+            </br>
+            <div class="row">
+                <center><a href="https://www.facebook.com/ManjaroLinux/"><img src="./res/Facebook_f_logo_(2019).svg"></a></center>
+                
+            </div>
+            
+            
+
+        </div>
+    </div>
+
+</footer>
+
+</html>
