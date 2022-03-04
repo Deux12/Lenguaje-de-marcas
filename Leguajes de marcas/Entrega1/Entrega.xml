@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albumes SYSTEM "TiendaMusica.dtd">
+<albumes id="">
+    <titulo></titulo>
+    <artista></artista>
+    <discografica></discografica>
+    <productor></productor>
+    <canciones>
+        <numero></numero>
+        <titulo></titulo>
+        <duracion></duracion>
+        <posicion></posicion>
+        <colaboracion>
+            <artista></artista>
+        </colaboracion>
+        <genero></genero>
+        <letrista></letrista>
+    </canciones>
+    <duracion></duracion>
+    <fechaPublicacion></fechaPublicacion>
+    <genero></genero>
+    <precio></precio>
+    <url></url>
+    <formato></formato>
+</albumes>

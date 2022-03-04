@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Ediciones_Aranda [
+   <!ELEMENT Ediciones_Aranda (Descripcion,Fecha_informe,Región)>
+   <!ELEMENT Descripcion (#PCDATA)>
+   <!ELEMENT Fecha_informe (#PCDATA)>
+   <!ELEMENT Región (norte,Centro,Sur)>
+   <!ELEMENT region (norte | centro | sur)>
+   <!ELEMENT norte (#PCDATA| tri| lib)*>
+   <!ELEMENT Centro (#PCDATA| tri| lib)*>
+   <!ELEMENT Sur (#PCDATA|tri| lib)*>
+   <!ELEMENT tri (#PCDATA)>
+   <!ELEMENT lib (#PCDATA)>
+]>
+<Ediciones_Aranda>
+    
+        <Descripcion>informe de ventas para las regiones Norte, Centro y Sur</Descripcion>
+        <Fecha_informe>30/12/2009</Fecha_informe>
+        <Región>
+            <norte>Norte
+                <tri>1</tri>
+                    <lib>24000</lib>
+                <tri>2</tri>
+                    <lib>38600</lib>
+                <tri>3</tri>
+                    <lib>No Info</lib>
+                <tri>4</tri>
+                    <lib>No Info</lib>
+            </norte>
+            <Centro>
+                <tri>1</tri>
+                    <lib>No Info</lib>
+                <tri>2</tri>
+                    <lib>16080</lib>
+                <tri>3</tri>
+                    <lib>25000</lib>
+                <tri>4</tri>
+                    <lib>29000</lib>
+            </Centro>
+            <Sur>
+                <tri>1</tri>
+                    <lib>27000</lib>
+                <tri>2</tri>
+                    <lib>314000</lib>
+                <tri>3</tri>
+                    <lib>40100</lib>
+                <tri>4</tri>
+                    <lib>30000</lib>
+            </Sur>
+        </Región>
+        
+  
+</Ediciones_Aranda>
