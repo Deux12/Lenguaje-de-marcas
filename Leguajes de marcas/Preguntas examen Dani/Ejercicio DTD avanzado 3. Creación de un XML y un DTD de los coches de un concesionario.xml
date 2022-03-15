@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE concesionario [
+    <!ELEMENT concesionario (modelo)*>
+    <!ELEMENT modelo (modelos_relacionado*,descripcion,motor_relacionado?)>
+    <!ATTLIST modelo id ID CDTA "">
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT modelos_relacionado (#PCDATA)>
+    <!ELEMENT motor_relacionado (#PCDATA)>
+]>
+
+<concesionario>
+    <modelo id="556">
+        <descripcion>No disponible</descripcion>
+    </modelo>
+    <modelo id="555">
+        <modelos_relacionado>444</modelos_relacionado>
+        <modelos_relacionado>556</modelos_relacionado>
+        <descripcion>	
+            Este modelo tiene un motor 1.998cc 16v. de cuatro cilindros, 
+            que desarrolla una potencia de 128 CV. Dispone de cambio manual ... el
+            consumo medio de este monovolumen es 11 a los 100 km. El precio base es de
+            2.225.000.
+        </descripcion>
+        <motor_relacionado>556</motor_relacionado>
+    </modelo>
+    <modelo id="557">
+        <descripcion>No disponible</descripcion>
+    </modelo>
+    <modelo id="154">
+        <descripcion>No disponible</descripcion>
+    </modelo>
+    <modelo id="444">
+        <modelos_relacionado>555</modelos_relacionado>
+        <modelos_relacionado>154</modelos_relacionado>
+        <descripcion>	
+            Este modelo tiene un motor 2.000cc 16v. de 
+            cuatro cilindros con 128 CV. Dispone de cambio manual ...
+            el consumo medio de este monovolumen es 11 a los 100 km. 
+            El precio base es de 2.500.000.
+        </descripcion>
+        <motor_relacionado>556</motor_relacionado>
+    </modelo>
+</concesionario>

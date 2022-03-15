@@ -1,0 +1,12 @@
+¿Cuáles son las principales diferencias que has encontrado en la práctica al trabajar con DTD y con XML-Schema?
+
+Los Xml definen tipos de datos para elementos y atributos, mientras que los DTD no admiten tipos de datos, los Xml permiten espacios de nombres mientras que los DTD no.
+Y los xsd al princpio son mucho más difíciles que los XSD.
+
+¿Cuáles crees que son las ventajas y desventajas que existen entre ambas formas de validación de documentos XML? Justifica tus respuestas.
+
+En los DTD la documentación me parececlara y se entiende facil la estructura, y su sistema de validación. Sus desventajas son que no adminten espacios en los nombres, solo
+es compatible con el tipo de dato de texto en cadena, No está orientado a objetos y posibilidades limitadas de expresar la cardinalidad para los elementos.
+
+En los XSD podemos crear y trabajar con tipos de datos, soporta los espacios de nombres. La desventaja clara es que es difícil de entender al principio sin
+ver la documentación.
