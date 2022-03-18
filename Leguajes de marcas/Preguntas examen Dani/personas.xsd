@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="personas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="nombre" type="xsd:string" />
+                <xsd:element ref="nacimiento" />
+                <xsd:element ref="direccion" />
+                <xsd:element name="sexo" type="tipoSexo" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="direccion">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="calle" type="xsd:string"/>
+                <xsd:element name="poblacion" type="xsd:string"/>
+                <xsd:element name="provincia" type="xsd:string"/>
+                <xsd:element name="cpostal" type="xsd:positiveInteger"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="tipoSexo">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Varon" />
+            <xsd:enumeration value="Hembra" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:element name="nacimiento">
+        <xsd:complexType>
+            <xsd:attribute name="dia" type="tipoDia" />
+            <xsd:attribute name="mes" type="tipoMes" />
+            <xsd:attribute name="anyo" type="tipoAnyo" />
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="tipoDia">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1" />
+            <xsd:maxInclusive value="31" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoMes">
+        <xsd:restriction base="xsd:string">
+            <xsd:enumeration value="Enero" />
+            <xsd:enumeration value="Febrero" />
+            <xsd:enumeration value="Marzo" />
+            <xsd:enumeration value="Abril" />
+            <xsd:enumeration value="Mayo" />
+            <xsd:enumeration value="Junio" />
+            <xsd:enumeration value="Julio" />
+            <xsd:enumeration value="Agosto" />
+            <xsd:enumeration value="Septiembre" />
+            <xsd:enumeration value="Octubre" />
+            <xsd:enumeration value="Noviembre" />
+            <xsd:enumeration value="Diciembre" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="tipoAnyo">
+        <xsd:restriction base="xsd:positiveInteger">
+            <xsd:minInclusive value="1900" />
+            <xsd:maxInclusive value="2011" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+</xsd:schema> 
